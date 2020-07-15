@@ -4,7 +4,7 @@ import './App.css';
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import 'primeflex/primeflex.css'
+import 'primeflex/primeflex.css';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Home from './container/Home';
@@ -12,9 +12,9 @@ import Product from './container/Product';
 
 const App = () => {
   return (
-    <div className="p-grid">
+    <div className="p-grid p-nogutter">
       <div className="p-col-12 App-header">
-        <Header />
+        <Header/>
       </div>
       <div className="p-col-12 App-container">
         <Switch>

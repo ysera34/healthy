@@ -3,11 +3,16 @@
 }
 
 .App-header {
-  background-color: #5d9e39;
+  background-color: #f4f4f4;
+}
+
+#header-toolbar {
+  border: none;
 }
 
 .App-footer {
   background-color: #855aa5;
+  text-align: center;
 }
 
 .App-container {

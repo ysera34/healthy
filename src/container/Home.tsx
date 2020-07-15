@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="App-home">
       <p>
-        Edit <code>src/App.tsx</code> and save to reload.
+        Home
       </p>
       <a
         className="App-link"
