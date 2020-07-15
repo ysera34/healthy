@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/intellij+all,react,node,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,react,node,macos
+# Created by https://www.toptal.com/developers/gitignore/api/intellij+all,react,node,macos,firebase
+# Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,react,node,macos,firebase
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -241,7 +241,16 @@ psd
 thumb
 sketch
 
-# End of https://www.toptal.com/developers/gitignore/api/intellij+all,react,node,macos
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/**
+
+# End of https://www.toptal.com/developers/gitignore/api/intellij+all,react,node,macos,firebase
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
@@ -257,7 +266,7 @@ sketch
 /build
 
 # misc
-.DS_Store
+.DS_Storev
 .env.local
 .env.development.local
 .env.test.local
