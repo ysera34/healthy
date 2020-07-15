@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Switch } from 'react-router';
 import './App.css';
+import 'primereact/resources/themes/nova-light/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+import 'primeflex/primeflex.css'
+import Header from './component/Header';
+import Footer from './component/Footer';
+import Home from './container/Home';
+import Product from './container/Product';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="p-grid">
+      <div className="p-col-12 App-header">
+        <Header />
+      </div>
+      <div className="p-col-12 App-container">
+        <Switch>
+          <Route path="/" exact>
+            <Home/>
+          </Route>
+          <Route path="/products" exact>
+            <Product/>
+          </Route>
+        </Switch>
+      </div>
+      <div className="p-col-12 App-footer">
+        <Footer/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
